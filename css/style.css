@@ -1,0 +1,335 @@
+body{
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#191922,#142a58,#025a82);
+  padding-top: 50px;
+}
+
+/* Navbar Container */
+.navBar {
+  display: flex;
+  justify-content: space-between; /* Pushes the elements apart */
+  align-items: center;            /* Vertically centers everything */
+  background-color: #1f2c52;      /* Sleek dark cybersecurity theme */
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 15px ;
+  padding-right: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom-style: hidden;
+  position: fixed;   /* Pins the navbar relative to the browser window */
+  top: 0;            /* Sticks it to the very top */
+  left: 0;           /* Stretches it starting from the left edge */
+  width: 100%;       /* Spans across the full screen width */
+  z-index: 1000; /* Keeps the navbar layer above all other content */
+}
+
+/* Align the buttons to the far right */
+.navBarName {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px; /* Puts space between Login and Sign Up buttons */}
+
+/* 2. Middle Logo Styling */
+.navBarNameLogo{
+  width: 35px;
+  height: 35px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px
+}
+
+/* Name Styling */
+.navMainName{
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color:aliceblue;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* button style */
+.navBarBotton{
+  margin-right: 50px;
+}
+
+/* .btn {
+  background-color: #999ca3;
+  border-radius: 6px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+} */
+
+.Navbtn{
+  background-color: #999ca3;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.Navbtn:hover{
+  /* color: #1f2c52; */
+  background-color: #21238d;
+}
+
+
+.Navbtnlink{
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+.NavbtnLink:hover{
+color: #1f2c52;
+}
+
+.videoContainer{
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust height or make it full screen */
+  overflow: hidden;
+  /* border-radius: 8px; */
+  margin-top: 5px;
+  border: 1px solid #334155;
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.vidioMain{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paraSection{
+  margin-top: 100px;
+}
+
+.paraContainter{
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.ParaH{
+  color: rgb(205, 45, 71);
+  font-family: cursive;
+  font-weight: bold;
+  /* width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; */
+
+  /* Centers the text inside the box */
+  text-align: center;
+}
+
+.paraInfo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-style: oblique;
+  color: #999ca3;
+  line-height: 1.6;
+  word-spacing: 10px;
+  font-weight: 700;
+  text-indent: 30px;
+  text-align: center;
+  /* width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+/* section 2 */
+
+.section-title {
+  color: rgb(205, 45, 71);
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.crimeSection{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* Container (ul) setup */
+.imageContainCrime {
+  display: flex; /* Aligns <li> items horizontally side-by-side */
+  justify-content: space-between; /* Spreads the 3 items evenly */
+  align-items: center; /* Vertically centers items in the row */
+  gap: 20px;  /* Gap between each list item */
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.card-list {
+  align-items: center;                             
+  list-style: none;             
+  padding: 0;
+  margin: 0;
+  border: 1px solid #9ca0a7;
+  /* border-radius: 8px; */
+  overflow: hidden;
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+/* Individual list item setup */
+.card-list li {
+  flex: 1;  /* Gives equal width to all 3 items */
+  text-align: center; 
+}
+
+h4{
+  color: rgb(205, 45, 71);
+  font-family: cursive;
+  font-weight: bold;
+  width: 70%;
+  height: auto;
+
+  /* Centers the 60% box horizontally */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Centers the text inside the box */
+  text-align: center;
+}
+
+b{
+  color: #33b489;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  font-style: oblique;
+  line-height: 1.6;
+  word-spacing: 5px;
+  font-weight: bold;
+  text-indent: 10px;
+}
+.card-list li p{
+  color: #999ca3;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  font-style: oblique;
+  line-height: 1.6;
+  word-spacing: 5px;
+  font-weight: 700;
+  text-indent: 10px;
+  padding-bottom: 20px;
+  width: 75%;         /* Set a width for the container */
+  margin: 0 auto;      /* Centers the box horizontally on the page */
+  text-align: center;
+}
+
+.list-img {
+  width: 100%;          /* Expands to fill the parent container's width */
+  /*max-width: 320px; */    /* Prevents it from getting bigger than 320px */
+  height: 200px;        /* Set a fixed height or use auto */
+  object-fit: cover;    /* Prevents image distortion/stretching */
+  border-radius: 8px;   /* Rounds the image corners */
+}
+
+
+/* footer */
+
+/* Footer Base Styling */
+.site-footer {
+  background-color: #1f2c52; /* Dark navy background */
+  color: #94a3b8;            /* Soft light-gray text */
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+/* Main Container (Flexbox Grid) */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Brand Section */
+.footer-brand {
+  margin-top: 50px;
+  flex: 1 1 200px;
+}
+
+.footer-brand h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: cursive;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Link Columns */
+.footer-links {
+  flex: 1 1 160px;
+}
+
+.footerh4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #38bdf8; /* Highlight blue on hover */
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

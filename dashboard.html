@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - OmniGuard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script src="JS/dashboard.js"></script>
+</body>
+  </head>
+  <body>
+    <!-- Navigation Bar (Without Sign-Up / Log-In Buttons) -->
+    <header class="navbar">
+      <div class="logoContainer">
+        <a href="index.html" class="logoLink">
+          <img
+            src="Image&Video/logo3.png"
+            alt="OmniGuard Logo"
+            class="logoImg"
+          />
+          <span class="logoText">OmniGuard</span>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="navLinks">
+        <a href="index.html">Home</a>
+        <a href="#">Overview</a>
+        <a href="#">Activity Log</a>
+        <a href="#">Settings</a>
+      </nav>
+
+      <!-- Profile Indicator instead of Auth Buttons -->
+      <div class="userProfile">
+        <span class="welcomeText" id="welcomeUser">Welcome back!</span>
+        <button class="logoutBtn" onclick="userLogOut()">Log Out</button>
+      </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboardContainer">
+      <section class="welcomeSection">
+        <h2>Security Dashboard</h2>
+        <p>Monitor real-time security alerts and threat analytics.</p>
+      </section>
+
+      <!-- Dashboard Grid / Stats Cards -->
+      <section class="statsGrid">
+        <div class="card">
+          <h3>System Status</h3>
+          <p class="statusText success">Protected</p>
+        </div>
+        <div class="card">
+          <h3>Active Threats</h3>
+          <p class="statNumber">0</p>
+        </div>
+        <div class="card">
+          <h3>Blocked Breaches</h3>
+          <p class="statNumber">128</p>
+        </div>
+        <div class="card">
+          <h3>Successful Captures</h3>
+          <p class="statNumber">1280+</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer matching OmniGuard Style -->
+    <footer class="footer">
+      <p>&copy; 2026 OmniGuard. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function userLogOut() {
+        // Optional: clear session or redirect back to login page
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

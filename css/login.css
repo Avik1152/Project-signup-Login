@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #191922, #142a58, #025a82);
+}
+
+/* Section */
+.loginSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.loginContainer {
+  width: 400px;
+  padding: 35px;
+  margin-top: 250px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* logo */
+.loginContainerLogo{
+  position: absolute;
+  top: 80px;
+}
+
+.loginContainerLogo img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%; /* Optional: matches circular logos for cleaner drop-shadows */
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    /* Subtle glow */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    /* Expanded bright glow */
+    filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.8));
+  }
+  100% {
+    /* Return to subtle glow */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+}
+
+/* Heading */
+.loginContainerH {
+  position: absolute;
+  top: 225px;
+}
+
+.loginContainerH h2 {
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Form */
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Button */
+.loginBtn {
+  width: 45%;
+  margin-top: 20px;
+  margin-left: 90px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.loginBtn:active {
+  transform: scale(0.97);
+}
+
+/* Container spacing and alignment */
+.auth-switch {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* Base text styling */
+.switchToSignup {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  color: rgb(135, 144, 153); /* A clean, modern muted slate color */
+  margin: 0;
+}
+
+/* The interactive Sign Up link */
+.signupLink {
+  color: #2563eb; /* Modern royal blue for primary actions */
+  text-decoration: none;
+  font-weight: 600;
+  /* Smooth transition for the hover effect */
+  transition:
+    color 0.2s ease,
+    text-decoration 0.2s ease;
+}
+
+/* Hover and Focus states - always include both for accessibility */
+.signupLink:hover,
+.signupLink:focus {
+  color: #1d4ed8; /* Darker blue on hover */
+  text-decoration: underline;
+  outline: none; /* Clears default browser outline if focus styles are handled */
+}
+
+.massageLogin{
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: cursive;
+  text-align: center;
+}
+
+.massageLoginCredential{
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: cursive;
+  text-align: center;
+}
+
+/* backToHome */
+
+.backToHome {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align:center;
+  }
+
+.backToHome a{
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 17px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+  
+  .backToHome:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }

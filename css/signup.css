@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#191922,#142a58,#025a82);
+}
+
+/* Section */
+
+.signupSection{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Card */
+
+.signupContainer{
+    width:500px;
+    padding:35px;
+    margin-top: 280px;
+    margin-bottom: 50px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+/*logo*/
+.signupContainerLogo{
+    position: absolute;
+    top: 60px;
+}
+
+.signupContainerLogo img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%; /* Optional: matches circular logos for cleaner drop-shadows */
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    /* Subtle glow */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    /* Expanded bright glow */
+    filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.8));
+  }
+  100% {
+    /* Return to subtle glow */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+}
+
+/* Heading */
+.signupContainerH{
+    position:absolute;
+    top:220px;
+}
+
+.signupContainerH h2{
+    color:white;
+    font-size:1.5rem;
+    font-weight:600;
+    font-family:cursive;
+    text-align:center;
+}
+
+/* Form */
+
+.formContainer form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    color:white;
+    margin-bottom:8px;
+    font-size:15px;
+    font-family:cursive;
+    font-weight:500;
+}
+
+.required-star {
+  color: aliceblue;
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    background:rgba(255,255,255,.2);
+    color:white;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:rgba(255,255,255,.8);
+}
+
+input:focus{
+    background:rgba(255,255,255,.3);
+    box-shadow:0 0 10px rgba(255,255,255,.4);
+}
+
+/* Login Link */
+
+.auth-switch{
+    margin-top:20px;
+    text-align:center;
+}
+
+.switchToLogin{
+    font-size:14px;
+    color:#cbd5e1;
+}
+
+.loginLink{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.loginLink:hover{
+    color:#1d4ed8;
+    text-decoration:underline;
+}
+
+/* Button */
+
+.signupBtn{
+    width:50%;
+    margin:15px auto 0;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+    background:#cbd5e1;
+    font-family:"Poppins",sans-serif;
+    color:#2563eb;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signupBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.signupBtn:active{
+    transform:scale(.97);
+}
+
+
+/*massage*/
+.massageSignup{
+    margin-top:15px;
+    margin-bottom:0px;
+    font-size:15px;
+    font-weight:600;
+    font-family:cursive;
+    text-align:center;
+}
+
+/* backToHome */
+
+.backToHome {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align:center;
+  }
+
+.backToHome a{
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 17px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+  
+  .backToHome:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }

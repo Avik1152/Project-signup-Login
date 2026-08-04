@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+    <section class="loginSection">
+      <div class="loginContainerLogo">
+        <img src="Image&Video/logo3.png" alt="" />
+      </div>
+      <div class="loginContainerH"><h2>OmniGuard LogIn</h2></div>
+      <div class="loginContainer">
+        <div class="formContainer">
+          <form id="login-form">
+            <label for="">Full Name(Enter your registered full name)*</label>
+            <input type="name" placeholder="Full Name" id="userName" required />
+            <br />
+            <label for="">Email(Enter your registered email address)*</label>
+            <input type="email" placeholder="Email" id="userEmail" required />
+            <br />
+            <label for="">Password(Enter your account password)*</label>
+            <input
+              type="password"
+              placeholder="Password"
+              id="userPassword"
+              required
+            />
+            <br />
+            <button type="submit" class="loginBtn" onclick="userLogIn(event)">
+              LogIn
+            </button>
+            <div class="auth-switch">
+              <p class="switchToSignup">
+                Don't have an account?
+                <a href="signup.html" id="switchToSignup" class="signupLink"
+                  >Create your account</a
+                >
+              </p>
+            </div>
+            <p class="massageLogin" id="message-display"></p>
+            <!-- <p class="massageLoginCredential" id="message-display"></p> -->
+            <div class="backToHome">
+              <a href="index.html">Cancle</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

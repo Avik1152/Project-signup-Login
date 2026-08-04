@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - OmniGuard</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <script src="js/signup.js"></script>
+  </head>
+  <body>
+    <section class="signupSection">
+      <div class="signupContainerLogo">
+        <img src="Image&Video/logo3.png" alt="" />
+      </div>
+      <div class="signupContainerH">
+        <h2>Welcome to OmniGuard</h2>
+      </div>
+      <div class="signupContainer">
+        <div class="formContainer">
+          <form>
+            <label
+              >Enter Your Full Name <span class="required-star">*</span></label
+            >
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="userName"
+              required
+            />
+
+            <br />
+
+            <label>Email <span class="required-star">*</span></label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="userEmail"
+              required
+            />
+
+            <br />
+
+            <label>Password <span class="required-star">*</span></label>
+            <input
+              type="password"
+              placeholder="Create password"
+              id="userPassword"
+              required
+            />
+
+            <br />
+
+            <label>Confirm Password <span class="required-star">*</span></label>
+            <input
+              type="password"
+              placeholder="Confirm password"
+              id="userConfirmPassword"
+              required
+            />
+
+            <br />
+
+            <button type="button" class="signupBtn" onclick="userSignUp(event)">
+              Sign Up
+            </button>
+          </form>
+        </div>
+        <div class="auth-switch">
+          <p class="switchToLogin">
+            Already have an account?
+            <a href="login.html" class="loginLink">Log In</a>
+          </p>
+        </div>
+        <p class="massageSignup" id="message-display"></p>
+        <div class="backToHome">
+          <a href="index.html">Cancle</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
