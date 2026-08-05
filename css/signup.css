@@ -25,15 +25,21 @@ body{
 /* Card */
 
 .signupContainer{
-    width:500px;
+    width:480px;
+    max-width:90%;
     padding:35px;
     margin-top: 280px;
     margin-bottom: 50px;
     background:rgba(255,255,255,.12);
-    backdrop-filter:blur(15px);
+    /* backdrop-filter:blur(15px); */
     border:1px solid rgba(255,255,255,.25);
     border-radius:18px;
     box-shadow:0 15px 40px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.signupContainer:hover{
+    transform:translateY(-5px);
 }
 
 /*logo*/
@@ -89,7 +95,7 @@ label{
     color:white;
     margin-bottom:8px;
     font-size:15px;
-    font-family:cursive;
+    font-family:"Poppins", sans-serif;
     font-weight:500;
 }
 
@@ -102,10 +108,11 @@ label{
 input{
     width:100%;
     padding:8px;
-    border:none;
+    /* border:none; */
+    border:1px solid rgba(255,255,255,.15);
     border-radius:10px;
     outline:none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins", sans-serif;
     font-size:16px;
     background:rgba(255,255,255,.2);
     color:white;
@@ -153,9 +160,9 @@ input:focus{
     padding:8px;
     border:none;
     border-radius:10px;
-    background:#cbd5e1;
+    background:#2563eb;
     font-family:"Poppins",sans-serif;
-    color:#2563eb;
+    color:white;
     font-size:16px;
     font-weight:600;
     cursor:pointer;
@@ -163,8 +170,9 @@ input:focus{
 }
 
 .signupBtn:hover{
+    background:#1d4ed8;
     transform:translateY(-3px);
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    box-shadow:0 12px 25px rgba(37,99,235,.4);
 }
 
 .signupBtn:active{
@@ -178,7 +186,7 @@ input:focus{
     margin-bottom:0px;
     font-size:15px;
     font-weight:600;
-    font-family:cursive;
+    font-family:"Poppins",sans-serif;
     text-align:center;
 }
 
@@ -192,7 +200,7 @@ input:focus{
 
 .backToHome a{
     font-size: 14px;
-    font-family: monospace;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 17px;
     color: #2563eb;

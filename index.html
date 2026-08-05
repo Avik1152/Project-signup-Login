@@ -4,21 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <nav class="navBar">
-        <div class="navBarName">
+        <!-- <div class="navBarName"> -->
+        <!-- <img src="Image&Video/logo3.png" alt="" class="navBarNameLogo" />
+          <a href="" class="navMainName">OmniGuard</a> -->
+        <a href="index.html" class="logoContainer">
           <img src="Image&Video/logo3.png" alt="" class="navBarNameLogo" />
-          <a href="" class="navMainName">OmniGuard</a>
-        </div>
+          <span class="navMainName">OmniGuard</span>
+        </a>
+        <!-- </div> -->
         <div class="navBarBotton">
-          <button class="Navbtn">
+          <!-- <button class="Navbtn" id="signupBtn" type="button">
             <a href="signup.html" class="Navbtnlink">Signup</a>
           </button>
-          <button class="Navbtn">
+          <button class="Navbtn" id="loginBtn" type="button">
             <a href="login.html" class="Navbtnlink">LogIn</a>
+          </button> -->
+          <button
+            class="Navbtn"
+            id="signupBtn"
+            type="button"
+            onclick="window.location.href = 'signup.html'"
+          >
+            <i class="fa-solid fa-user-plus"></i>
+            Signup
+          </button>
+          <button
+            class="Navbtn"
+            id="loginBtn"
+            type="button"
+            onclick="window.location.href = 'login.html'"
+          >
+            <i class="fa-solid fa-right-to-bracket"></i>
+            LogIn
           </button>
         </div>
       </nav>
@@ -33,11 +67,23 @@
           playsinline
           class="vidioMain"
         ></video>
+        <div class="heroContent">
+          <h1>Protecting the Digital World</h1>
+          <p>Advanced Crime & Cyber Security Management</p>
+
+          <button
+            class="heroBtn"
+            type="button"
+            onclick="window.location.href = 'signup.html'"
+          >
+            Get Started
+          </button>
+        </div>
       </div>
     </main>
     <section class="paraSection">
       <div class="paraContainter">
-        <h2 class="ParaH">Securing the Digital and Physical Frontier</h2>
+        <h2 class="ParaH">Our Mission</h2>
         <p class="paraInfo">
           In an era where threats evolve at the speed of data, traditional
           security boundaries are no longer enough.
@@ -307,32 +353,61 @@
 
     <footer class="site-footer">
       <div class="footer-container">
-        <div class="navBarName">
-          <img src="Image&Video/logo3.png" alt="" class="navBarNameLogo" />
-          <a href="" class="navMainName">OmniGuard</a>
-        </div>
+        <!-- Brand Section -->
         <div class="footer-brand">
+          <a href="index.html" class="logoContainer">
+            <img
+              src="Image&Video/logo3.png"
+              alt="OmniGuard Logo"
+              class="navBarNameLogo"
+            />
+            <span class="navMainName">OmniGuard</span>
+          </a>
+
           <p>
             Securing the digital and physical frontier with proactive
             intelligence and smart defense.
           </p>
+
+          <div class="socialIcons">
+            <a href="https://github.com/Avik1152" id="github-link"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/avikmondal-afution/"
+              id="linkedin-link"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="mailto:avik1152@gmail.com" id="email-link"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
         </div>
+
+        <!-- Quick Links -->
         <div class="footer-links">
+          <h4 class="footerh4">Quick Links</h4>
+
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+
+        <!-- Legal -->
         <div class="footer-links">
+          <h4 class="footerh4">Legal</h4>
+
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Security</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="security.html">Security</a></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 OmniGuard. All rights reserved.</p>
       </div>
