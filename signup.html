@@ -14,71 +14,83 @@
   </head>
   <body>
     <section class="signupSection">
-      <div class="signupContainerLogo">
-        <img src="Image&Video/logo3.png" alt="" />
-      </div>
-      <div class="signupContainerH">
-        <h2>Welcome to OmniGuard</h2>
-      </div>
-      <div class="signupContainer">
-        <div class="formContainer">
-          <form>
-            <label
-              >Enter Your Full Name <span class="required-star">*</span></label
-            >
-            <input
-              type="text"
-              placeholder="Enter your name"
-              id="userName"
-              required
-            />
-
-            <br />
-
-            <label>Email <span class="required-star">*</span></label>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              id="userEmail"
-              required
-            />
-
-            <br />
-
-            <label>Password <span class="required-star">*</span></label>
-            <input
-              type="password"
-              placeholder="Create password"
-              id="userPassword"
-              required
-            />
-
-            <br />
-
-            <label>Confirm Password <span class="required-star">*</span></label>
-            <input
-              type="password"
-              placeholder="Confirm password"
-              id="userConfirmPassword"
-              required
-            />
-
-            <br />
-
-            <button type="button" class="signupBtn" onclick="userSignUp(event)">
-              Sign Up
-            </button>
-          </form>
+      <div class="signupWrapper">
+        <!-- Logo -->
+        <div class="signupContainerLogo">
+          <img src="Image&Video/logo3.png" alt="OmniGuard Logo" />
         </div>
-        <div class="auth-switch">
-          <p class="switchToLogin">
-            Already have an account?
-            <a href="login.html" class="loginLink">Log In</a>
-          </p>
+
+        <!-- Heading -->
+        <div class="signupContainerH">
+          <h2>Welcome to OmniGuard</h2>
         </div>
-        <p class="massageSignup" id="message-display"></p>
-        <div class="backToHome">
-          <a href="index.html">Cancle</a>
+
+        <!-- Signup Card -->
+        <div class="signupContainer">
+          <div class="formContainer">
+            <form>
+              <label>
+                Enter Your Full Name
+                <span class="required-star">*</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="userName"
+                required
+              />
+              <label>
+                Email
+                <span class="required-star">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="userEmail"
+                required
+              />
+              <label>
+                Password
+                <span class="required-star">*</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Create password"
+                id="userPassword"
+                required
+              />
+              <label>
+                Confirm Password
+                <span class="required-star">*</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Confirm password"
+                id="userConfirmPassword"
+                required
+              />
+              <button
+                type="button"
+                class="signupBtn"
+                onclick="userSignUp(event)"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+
+          <div class="auth-switch">
+            <p class="switchToLogin">
+              Already have an account?
+              <a href="login.html" class="loginLink">Log In</a>
+            </p>
+          </div>
+
+          <p class="massageSignup" id="message-display"></p>
+
+          <div class="backToHome">
+            <a href="index.html"> Back </a>
+          </div>
         </div>
       </div>
     </section>
