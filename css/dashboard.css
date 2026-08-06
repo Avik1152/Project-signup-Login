@@ -7,21 +7,31 @@
 }
 
 body {
-  background-color: #0b132b;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  min-height:100vh;
+  background:linear-gradient(135deg,#191922,#142a58,#025a82);
+  color:white;
 }
 
 /* Header / Navbar Styling */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   background-color: #1c2541;
   border-bottom: 1px solid #3a506b;
+} */
+
+.navbar{
+  position:sticky;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background:rgba(20,35,70,.75);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  z-index:1000;
 }
 
 .logoContainer .logoLink {
@@ -40,7 +50,7 @@ body {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: cursive;
+  font-family: poppins, sans-serif;
 }
 
 /* Navigation Links */
@@ -55,7 +65,7 @@ body {
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
-  font-family: cursive;
+  font-family: poppins, sans-serif;
 }
 
 .navLinks a:hover {
@@ -72,44 +82,47 @@ body {
 .welcomeText {
   color: #a5adbb;
   font-size: 0.95rem;
-  font-family: cursive;
+  font-family: poppins, sans-serif;
 }
 
 .logoutBtn {
-  background-color: #999ca3;
+  background:transparent;
+  /* background-color: #999ca3; */
   color: #ffffff;
-  border: none;
+  border:2px solid #3b82f6;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+   transition:.3s;
 }
 
 .logoutBtn:hover {
-  color: #1f2c52;
-  background-color: #6216b8;
+  /* color: #1f2c52; */
+  background-color: #3b82f6;
 }
 
 /* Main Content Area */
 .dashboardContainer {
-  flex: 1;
-  padding: 40px;
-  max-width: 1200px;
+  /* flex: 1; */
+  /* padding: 40px; */
+  /* max-width: 1200px; */
+  width:min(92%,1200px);
   margin: 0 auto;
-  width: 100%;
+  padding:60px 0;
+  /* width: 100%; */
 }
 
 .welcomeSection h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  font-family: cursive;
+  font-family: poppins, sans-serif;
 }
 
 .welcomeSection p {
   color: #a5adbb;
   margin-bottom: 30px;
-  font-family: cursive;
+  font-family: poppins, sans-serif;
 }
 
 /* Stats Cards Layout */
@@ -120,10 +133,17 @@ body {
 }
 
 .card {
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
   background-color: #1c2541;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #3a506b;
+  padding: 30px;
+  border-radius: 18px;
+  transition:.35s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
 }
 
 .card h3 {
@@ -133,15 +153,33 @@ body {
 }
 
 .statNumber {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #6fffe9;
+  font-size: 42px;
+  font-weight: 700;
+  color: #38bdf8;
 }
 
 .statusText.success {
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: bold;
-  color: #009926;
+  color: #22c55e;
+}
+
+.recentActivity{
+    margin-top:40px;
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:18px;
+}
+
+.recentActivity ul{
+    margin-top:15px;
+    list-style:none;
+
+}
+
+.recentActivity li{
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 /* Footer Styling */
@@ -152,4 +190,137 @@ body {
   border-top: 1px solid #3a506b;
   color: #a5adbb;
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+
+  /* Sticky Header & Navbar */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  /* Logo Branding */
+  .logoContainer .logoLink {
+    gap: 8px;
+  }
+
+  .logoImg {
+    height: 32px;
+  }
+
+  .logoText {
+    font-size: 1.25rem;
+  }
+
+  /* User Profile & Compact Actions */
+  .userProfile {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* .welcomeText { */
+    /* display: none;  */
+    /* Hide welcome text on small screens to save space */
+  /* } */
+
+  .logoutBtn {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+
+  /* Navigation Links */
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .navLinks a {
+    font-size: 0.9rem;
+  }
+
+  /* Main Container */
+  .dashboardContainer {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  /* Welcome Section Header */
+  .welcomeSection {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .welcomeSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .welcomeSection p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  /* Responsive Stats Grid */
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .statNumber {
+    font-size: 32px;
+  }
+
+  .statusText.success {
+    font-size: 22px;
+  }
+
+  /* Recent Activity Section */
+  .recentActivity {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .recentActivity h2 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .recentActivity li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 10px 0;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 16px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
 }

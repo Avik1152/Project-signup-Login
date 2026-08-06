@@ -115,7 +115,7 @@ input{
     width:100%;
     padding:8px 8px 8px 20px;
     margin-bottom: 5px;
-    font-size:16px;
+    font-size:13px;
     font-family: "Poppins", sans-serif;
     border:1px solid rgba(255,255,255,.15);
     border-radius:10px;
@@ -162,11 +162,11 @@ input:focus{
 
 .signupBtn{
     width:45%;
-    min-width:180px;
-    max-width:220px;
+    min-width:100px;
+    max-width:150px;
     margin:25px auto 0;
     display:block;
-    padding:10px;
+    padding:8px;
     border:none;
     border-radius:10px;
     background:#ffffff;
@@ -242,12 +242,13 @@ input:focus{
     }
 
     input{
-        font-size:15px;
+        font-size:13px;
         padding:8px 8px 8px 20px;
     }
 
     .signupBtn{
-        width:100%;
+        width:45%;
         font-size:16px;
+        padding:6px 6px 6px 6px;
     }
 }

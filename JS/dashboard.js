@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. Display User Info on the Dashboard
   // Extract user name from email or format it for display
   const userDisplay = document.getElementById("welcomeUser");
-  if (userDisplay) {
-    userDisplay.innerText = `Welcome, ${storedName}!`;
+  if (userDisplay && storedName) {
+    const firstName = storedName.trim().split(" ")[0];
+    userDisplay.innerText = `Hi, ${firstName}!`;
   }
 });
 

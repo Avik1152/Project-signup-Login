@@ -9,9 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    
     <script src="JS/dashboard.js"></script>
-</body>
   </head>
   <body>
     <!-- Navigation Bar (Without Sign-Up / Log-In Buttons) -->
@@ -28,17 +26,19 @@
       </div>
 
       <!-- Navigation Links -->
-      <nav class="navLinks">
+      <!-- <nav class="navLinks">
         <a href="index.html">Home</a>
         <a href="#">Overview</a>
         <a href="#">Activity Log</a>
         <a href="#">Settings</a>
-      </nav>
+      </nav> -->
 
       <!-- Profile Indicator instead of Auth Buttons -->
       <div class="userProfile">
-        <span class="welcomeText" id="welcomeUser">Welcome back!</span>
-        <button class="logoutBtn" onclick="userLogOut()">Log Out</button>
+        <span class="welcomeText" id="welcomeUser">Hi</span>
+        <button class="logoutBtn" type="button" onclick="userLogOut()">
+          Log Out
+        </button>
       </div>
     </header>
 
@@ -52,7 +52,7 @@
       <!-- Dashboard Grid / Stats Cards -->
       <section class="statsGrid">
         <div class="card">
-          <h3>System Status</h3>
+          <h3><i class="fa-solid fa-shield-halved"></i> System Status</h3>
           <p class="statusText success">Protected</p>
         </div>
         <div class="card">
@@ -68,18 +68,22 @@
           <p class="statNumber">1280+</p>
         </div>
       </section>
+      <section class="recentActivity">
+        <div>
+          <h2>Recent Activity</h2>
+          <ul>
+            <li>✔ User logged in</li>
+            <li>✔ Security scan completed</li>
+            <li>✔ Database connected</li>
+            <li>✔ Firewall active</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- Footer matching OmniGuard Style -->
     <footer class="footer">
       <p>&copy; 2026 OmniGuard. All rights reserved.</p>
     </footer>
-
-    <script>
-      function userLogOut() {
-        // Optional: clear session or redirect back to login page
-        window.location.href = "login.html";
-      }
-    </script>
   </body>
 </html>

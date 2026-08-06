@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home - OmniGuard</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="JS/home.js"></script>
   </head>
   <body>
     <header>
@@ -59,14 +61,12 @@
     </header>
     <main>
       <div class="videoContainer">
-        <video
-          src="https://www.pexels.com/download/video/6580997/"
-          autoplay
-          muted
-          loop
-          playsinline
-          class="vidioMain"
-        ></video>
+        <video autoplay muted loop class="vidioMain">
+          <source
+            src="https://www.pexels.com/download/video/6580997/"
+            type="video/webm"
+          />
+        </video>
         <div class="heroContent">
           <h1>Protecting the Digital World</h1>
           <p>Advanced Crime & Cyber Security Management</p>
@@ -118,18 +118,30 @@
               <b>The Crime:</b> Charles Lindbergh Jr., the 20-month-old son of
               the famous aviator, was kidnapped from his home in New Jersey.
             </p>
-            <p>
-              <b>How It Was Solved:</b> Investigators tracked ransom money
-              marked with specific gold certificates to a Bronx gas station,
-              leading them to Richard Hauptmann. Forensic wood analysis matched
-              the homemade wooden ladder left at the crime scene directly to
-              floorboards in Hauptmann's attic.
-            </p>
+            <!-- Hidden checkbox -->
+            <input
+              type="checkbox"
+              id="toggle-1"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <!-- Collapsible Content -->
+            <div class="expandable-content">
+              <p>
+                <strong><b>How It Was Solved:</b></strong> Investigators tracked
+                ransom money marked with specific gold certificates to a Bronx
+                gas station, leading them to Richard Hauptmann. Forensic wood
+                analysis matched the homemade wooden ladder left at the crime
+                scene directly to floorboards in Hauptmann's attic.
+              </p>
+            </div>
+
+            <!-- Button label for the checkbox -->
+            <label for="toggle-1" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
+
         <ul class="card-list">
           <!-- List Item 1: Image -->
           <li>
@@ -149,17 +161,26 @@
               and dozens of burglaries across California went unsolved for
               decades.
             </p>
-            <p>
-              <b>How It Was Solved:</b> In 2018, investigators used
-              Investigative Genetic Genealogy. They uploaded crime scene DNA to
-              public genealogy databases (GEDmatch), built out family trees, and
-              identified ex-police officer Joseph James DeAngelo.
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-2"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>How It Was Solved:</b> In 2018, investigators used
+                Investigative Genetic Genealogy. They uploaded crime scene DNA
+                to public genealogy databases (GEDmatch), built out family
+                trees, and identified ex-police officer Joseph James DeAngelo.
+              </p>
+            </div>
+            <label for="toggle-2" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
+
         <ul class="card-list">
           <!-- List Item 1: Image -->
           <li>
@@ -175,17 +196,26 @@
               <b>The Crime:</b> Serial killer Ted Bundy murdered numerous young
               women across multiple states.
             </p>
-            <p>
-              <b>How It Was Solved:</b> Bundy was caught during a routine
-              traffic stop in Florida. The critical evidence that secured his
-              conviction for the Chi Omega sorority murders came from forensic
-              odontology (bite mark analysis).
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-3"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>How It Was Solved:</b> Bundy was caught during a routine
+                traffic stop in Florida. The critical evidence that secured his
+                conviction for the Chi Omega sorority murders came from forensic
+                odontology (bite mark analysis).
+              </p>
+            </div>
+            <label for="toggle-3" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
+
         <ul class="card-list">
           <!-- List Item 1: Image -->
           <li>
@@ -202,19 +232,28 @@
               Ohio. Her husband, Dr. Sam Sheppard, claimed an intruder killed
               her. (This case inspired the movie The Fugitive).
             </p>
-            <p>
-              <b>How It Was Solved:</b> Though initially wrongfully convicted,
-              bloodstain pattern analysis conducted during re-investigations
-              identified a third person's blood at the scene, leading to legal
-              exoneration and pioneering the use of blood spatter science in
-              court.
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-4"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>How It Was Solved:</b> Though initially wrongfully convicted,
+                bloodstain pattern analysis conducted during re-investigations
+                identified a third person's blood at the scene, leading to legal
+                exoneration and pioneering the use of blood spatter science in
+                court.
+              </p>
+            </div>
+            <label for="toggle-4" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
       </div>
+
       <div class="imageContainCrime">
         <ul class="card-list">
           <!-- List Item 1: Image -->
@@ -233,24 +272,33 @@
               victims' files and demanded Bitcoin ransom payments to restore
               access.
             </p>
-            <p>
-              <b>Impact:</b> It severely crippled critical infrastructure,
-              including the UK's National Health Service (NHS), FedEx, and major
-              telecommunications networks.
-            </p>
-            <p>
-              <b>How It Was Solved / Contained:</b> Marcus Hutchins, a British
-              cybersecurity researcher, discovered an unregistered domain name
-              hidden inside the ransomware code. By registering that domain, he
-              accidentally activated a built-in "kill switch" that stopped the
-              virus from spreading further. Later investigations attributed the
-              malware to North Korea's Lazarus Group.
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-5"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>Impact:</b> It severely crippled critical infrastructure,
+                including the UK's National Health Service (NHS), FedEx, and
+                major telecommunications networks.
+              </p>
+              <p>
+                <b>How It Was Solved / Contained:</b> Marcus Hutchins, a British
+                cybersecurity researcher, discovered an unregistered domain name
+                hidden inside the ransomware code. By registering that domain,
+                he accidentally activated a built-in "kill switch" that stopped
+                the virus from spreading further. Later investigations
+                attributed the malware to North Korea's Lazarus Group.
+              </p>
+            </div>
+            <label for="toggle-5" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
+
         <ul class="card-list">
           <!-- List Item 1: Image -->
           <li>
@@ -267,24 +315,33 @@
               criminal group, launched a targeted attack on Colonial Pipeline,
               the largest fuel pipeline system in the United States.
             </p>
-            <p>
-              <b>Impact:</b> The company proactively shut down the pipeline for
-              several days, causing gas panics, price spikes, and widespread
-              shortages across the US East Coast. Colonial paid a ransom of 75
-              Bitcoin (~$4.4 million).
-            </p>
-            <p>
-              <b>How It Was Solved:</b> The FBI traced the cryptocurrency
-              transactions through the Bitcoin blockchain. By obtaining the
-              private key to one of the hackers' cryptocurrency wallets, federal
-              law enforcement managed to recover $2.3 million of the paid
-              ransom.
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-6"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>Impact:</b> The company proactively shut down the pipeline
+                for several days, causing gas panics, price spikes, and
+                widespread shortages across the US East Coast. Colonial paid a
+                ransom of 75 Bitcoin (~$4.4 million).
+              </p>
+              <p>
+                <b>How It Was Solved:</b> The FBI traced the cryptocurrency
+                transactions through the Bitcoin blockchain. By obtaining the
+                private key to one of the hackers' cryptocurrency wallets,
+                federal law enforcement managed to recover $2.3 million of the
+                paid ransom.
+              </p>
+            </div>
+            <label for="toggle-6" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
+
         <ul class="card-list">
           <!-- List Item 1: Image -->
           <li>
@@ -301,19 +358,28 @@
               operating on the Tor network (Dark Web) where users bought and
               sold illegal drugs, weapons, and stolen data using Bitcoin.
             </p>
-            <p>
-              <b>How It Was Solved:</b> A multi-agency task force (FBI, IRS,
-              DEA) conducted digital forensic tracking and traced early online
-              forum posts promoting the site back to an old personal email
-              address. This led to the arrest of founder Ross Ulbricht ("Dread
-              Pirate Roberts") in a San Francisco public library while logged
-              into the site's administration panel.
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-7"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>How It Was Solved:</b> A multi-agency task force (FBI, IRS,
+                DEA) conducted digital forensic tracking and traced early online
+                forum posts promoting the site back to an old personal email
+                address. This led to the arrest of founder Ross Ulbricht ("Dread
+                Pirate Roberts") in a San Francisco public library while logged
+                into the site's administration panel.
+              </p>
+            </div>
+            <label for="toggle-7" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
+
         <ul class="card-list">
           <!-- List Item 1: Image -->
           <li>
@@ -330,23 +396,31 @@
               in two massive separate attacks, compromising over 3 billion user
               accounts—making it the largest data breach in history.
             </p>
-            <p>
-              <b>Impact:</b> Names, email addresses, phone numbers, security
-              questions, and hashed passwords were stolen across billions of
-              user accounts worldwide.
-            </p>
-            <p>
-              <b>How It Was Solved:</b> The U.S. Department of Justice
-              investigated the incident using international digital forensics
-              and indicted four individuals, including officers from Russia's
-              Federal Security Service (FSB) and hired cybercriminals who
-              exploited stolen web cookies to access user accounts without
-              passwords.
-            </p>
+
+            <input
+              type="checkbox"
+              id="toggle-8"
+              title="Expand"
+              class="toggle-checkbox"
+            />
+
+            <div class="expandable-content">
+              <p>
+                <b>Impact:</b> Names, email addresses, phone numbers, security
+                questions, and hashed passwords were stolen across billions of
+                user accounts worldwide.
+              </p>
+              <p>
+                <b>How It Was Solved:</b> The U.S. Department of Justice
+                investigated the incident using international digital forensics
+                and indicted four individuals, including officers from Russia's
+                Federal Security Service (FSB) and hired cybercriminals who
+                exploited stolen web cookies to access user accounts without
+                passwords.
+              </p>
+            </div>
+            <label for="toggle-8" class="toggle-btn"></label>
           </li>
-          <!-- <li>
-            <button type="button">Learn More</button>
-          </li> -->
         </ul>
       </div>
     </section>
