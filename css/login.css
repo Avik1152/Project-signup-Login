@@ -105,10 +105,10 @@ body {
 
 label {
   color: white;
-  margin-bottom: 8px;
-  margin-top: 8px;
+  margin-bottom: 1px;
+  margin-top: 10px;
   font-size: 15px;
-  font-family: cursive;
+  font-family: poppins, sans-serif;
   font-weight: 500;
 }
 
